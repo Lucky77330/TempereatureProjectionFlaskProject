@@ -1,0 +1,8 @@
+# render.yaml
+build:
+  - ...
+  - name: Change permissions on static folder
+    command: chmod 777 static
+  - ...
+
+# The rest of your render.yaml file
