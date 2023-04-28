@@ -202,9 +202,9 @@ def result(latitude,longitude):
  ploter(obsdata,historicalarray,futurearray1,futurearray2,historicalMean,futuremean1,futuremean2,historicalMax,FutureMax1,FutureMax2)
  df = pd.DataFrame({'Date': dates, 'TemperatureData': temperature})
  df2 = pd.DataFrame({'Date': dates2, 'TemperatureData': temperature2})
- csv1_path = 'C:\\Users\\Akshay Nirmal\\Desktop\\rect\\flask-project\\static\\Future_Temperature_Projection_2021-2060.csv'
+ csv1_path = 'static\\Future_Temperature_Projection_2021-2060.csv'
  df.to_csv(csv1_path, index=False)
- csv2_path = 'C:\\Users\\Akshay Nirmal\\Desktop\\rect\\flask-project\\static\\Future_Temperature_Projection_2061-2100.csv'
+ csv2_path = 'static\\Future_Temperature_Projection_2061-2100.csv'
  df2.to_csv(csv2_path, index=False)
  return csv1_path,csv2_path
 
